@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>courses </title>
+</head>
+<body bgcolor="6BA3B9">
+<font size="5px">
+	<ul>
+		{% for data in dataset %}
+
+		<li>{{ data.name }}</li>
+		<li>{{ data.num_students }}</li>
+		
+		<hr/>
+		{% empty %}
+		<li> no objects yet.</li>
+
+		{% endfor %}
+	</ul>
+</font>
+</body>
+</html>

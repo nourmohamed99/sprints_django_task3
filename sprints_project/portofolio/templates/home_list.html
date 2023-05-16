@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home List</title>
+</head>
+<body bgcolor="6BA3B9">
+    <h1>List</h1>
+    <ul>
+        {% for home in homes %}
+        <li>username: {{ home.username }}  - gender: {{ home.gender }}</li>
+        {% endfor %}
+    </ul>
+<button onclick="window.location.href='{% url 'home' %}'">Back Home</button>
+</body>
+</html>

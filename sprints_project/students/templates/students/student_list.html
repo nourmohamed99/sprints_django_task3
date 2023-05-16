@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>student list second way </title>
+</head>
+<body>
+	<ul>
+		{% for object in object_list %}
+		<li>{{ object.f_name }}</li>
+		<li>{{ object.l_name }}</li>
+		<li>{{ object.mobile}}</li>
+		<li>{{ object.birth_date}}</li>
+		<hr/>
+		{% empty %}
+		<li> no objects yet.</li>
+
+		{% endfor %}
+	</ul>
+
+</body>
+</html>
